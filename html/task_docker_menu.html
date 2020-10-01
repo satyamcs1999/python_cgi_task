@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Service Menu</title>
+    <style>
+	:root {
+    		background-color: #424242;
+	}
+
+	h1{
+    		color: #74ffd9;
+    		text-align: center;
+    		font-family: 'Oswald';
+    		font-size: 2.5em;
+	}	
+
+	.panel {
+    		text-align: center;
+	}
+
+	.panel2 {
+                text-align: center;
+        }
+
+	.panel button {
+    		height: 2.7em;
+    		margin-top: 2em;
+    		margin-left: 0em;
+    		background-color: blanchedalmond;
+    		font-family: 'Spartan';
+    		display: inline-block;
+	}
+
+	.panel2 button {
+                height: 1.6em;
+                margin-top: 2em;
+                margin-left: 0em;
+                background-color: blanchedalmond;
+                font-family: 'Spartan';
+                display: inline-block;
+        }
+
+
+	@media screen and (max-width: 400px){
+    		.panel button {
+        		margin-top: 0;
+        		margin-left: 0;
+    		}
+	}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <h1>Docker Service Menu</h1>
+    </div>
+    <form class="panel" action='http://192.168.56.105/task_docker_create.html'>
+        <button type="submit">Create New Container</button>
+    </form>
+    <form class="panel" action='http://192.168.56.105/task_docker_remove.html'>
+    	<button type="submit">Remove Container</button>
+    </form>
+    <form class="panel" action='http://192.168.56.105/task_docker_image.html'>
+        <button type="submit">Download Docker Image</button>
+    </form>
+    <form class="panel" action='http://192.168.56.105/task_docker_stop.html'>
+        <button type="submit">Stop Container</button>
+    </form>
+    <form class="panel" action='http://192.168.56.105/task_docker_image_remove.html'>
+        <button type="submit">Remove Docker Image</button>
+    </form>
+    <form class="panel" action='http://192.168.56.105/task_docker_status.html'>
+        <button type="submit">Check Container Status</button>
+    </form><br><br>
+    <form class="panel2" action='http://192.168.56.105/index.html'>
+        <button type="submit">Back to Main Menu</button>
+    </form>
+</body>
+</html>

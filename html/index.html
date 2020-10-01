@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+	:root {
+    		background-color: #424242;
+	}
+
+	h1{
+    		color: #74ffd9;
+    		text-align: center;
+    		font-family: 'Oswald';
+    		font-size: 2.5em;
+	}
+
+	.image_div {
+		text-align: center;
+	}
+
+	.image_linux {
+		width: 250px;
+		height: 100px;
+		display: inline-block;
+		margin-right: 10em;
+		
+	}
+
+	.image_docker {
+		width: 250px;
+		height: 100px;
+		display: inline-block;
+		margin-left: 10em;
+	}
+
+	.panel{
+    		text-align: center;
+	}
+
+	.panel button {
+    		height: 2.7em;
+    		margin-top: 2em;
+    		margin-left: 0em;
+    		background-color: blanchedalmond;
+    		font-family: 'Spartan';
+    		display: inline-block;
+	}
+
+	@media screen and (max-width: 800px){
+    		.panel button {
+        		margin-top: 1em;
+        		margin-left: 0;
+    		}
+		
+		.image_docker {
+			margin-left: 5em;
+		}
+
+		.image_linux {
+			margin-right: 5em;
+		}
+	}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Main Page</h1>
+    </div>
+    <form class="panel"  action='http://192.168.56.105/task_2.html'>
+        <button type="submit">Run Linux Commands</button>
+    </form>
+    <form class="panel" action='http://192.168.56.105/task_docker_menu.html'>
+	<button type="submit">Run Docker Commands</button>
+    </form><br><br><br>
+    <div class="image_div">
+    	<img class="image_linux" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTcqdWgnm02UPb3lEFB02QKBkiwXqi8Vp-eaA&usqp=CAU">
+    	<img class="image_docker" src="https://seekvectorlogo.com/wp-content/uploads/2018/12/docker-vector-logo.png">
+    </div> 
+</body>
+</html>
